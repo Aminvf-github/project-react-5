@@ -18,7 +18,7 @@ const Form = () => {
         setshowResult(!showResult)
     }
   return<>
-  <div className='bg-gradient-to-r from-cyan-500 to-blue-500 w-1/2 h-96 rounded-lg flex flex-row justify-center items-center'>
+  <div className='bg-gradient-to-r from-cyan-500 to-blue-500 w-1/2 h-96 rounded-lg flex flex-col justify-center items-center'>
   <form action="">
     <Input id="username" placeholder='enter userName' type='text' handleChange={handlesetUserName} />
     <br /> <br />
@@ -28,7 +28,7 @@ const Form = () => {
   </form>
   <div>
         {showResult === true &&(
-            <div className='relative right-60 top-16'>
+            <div className='relative  top-16'>
             <b>
             UserName:{UserName}
             <br />
